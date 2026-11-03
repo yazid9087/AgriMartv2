@@ -58,8 +58,6 @@ Partial Class FrmRiwayatPenjualan
         Me.lblInfo = New System.Windows.Forms.Label()
         Me.lblTotalCaption = New System.Windows.Forms.Label()
         Me.lblTotal = New System.Windows.Forms.Label()
-        Me.btnCetak = New System.Windows.Forms.Button()
-        Me.btnTutup = New System.Windows.Forms.Button()
         Me.tlpRoot.SuspendLayout()
         Me.pnlHeader.SuspendLayout()
         Me.pnlFilter.SuspendLayout()
@@ -454,15 +452,13 @@ Partial Class FrmRiwayatPenjualan
         '
         Me.tlpFooter.ColumnCount = 5
         Me.tlpFooter.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 38.0!))
-        Me.tlpFooter.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17.0!))
-        Me.tlpFooter.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17.0!))
-        Me.tlpFooter.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.0!))
-        Me.tlpFooter.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.0!))
+        Me.tlpFooter.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 46.85153!))
+        Me.tlpFooter.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.98036!))
+        Me.tlpFooter.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.6354708!))
+        Me.tlpFooter.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.5199307!))
         Me.tlpFooter.Controls.Add(Me.lblInfo, 0, 0)
         Me.tlpFooter.Controls.Add(Me.lblTotalCaption, 1, 0)
         Me.tlpFooter.Controls.Add(Me.lblTotal, 2, 0)
-        Me.tlpFooter.Controls.Add(Me.btnCetak, 3, 0)
-        Me.tlpFooter.Controls.Add(Me.btnTutup, 4, 0)
         Me.tlpFooter.Dock = System.Windows.Forms.DockStyle.Fill
         Me.tlpFooter.Location = New System.Drawing.Point(0, 0)
         Me.tlpFooter.Name = "tlpFooter"
@@ -500,7 +496,7 @@ Partial Class FrmRiwayatPenjualan
         Me.lblTotal.Dock = System.Windows.Forms.DockStyle.Fill
         Me.lblTotal.Font = New System.Drawing.Font("Segoe UI", 13.0!, System.Drawing.FontStyle.Bold)
         Me.lblTotal.ForeColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(135, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.lblTotal.Location = New System.Drawing.Point(962, 7)
+        Me.lblTotal.Location = New System.Drawing.Point(1479, 7)
         Me.lblTotal.Name = "lblTotal"
         Me.lblTotal.Size = New System.Drawing.Size(288, 55)
         Me.lblTotal.TabIndex = 2
@@ -518,7 +514,7 @@ Partial Class FrmRiwayatPenjualan
         Me.btnCetak.Location = New System.Drawing.Point(1258, 12)
         Me.btnCetak.Margin = New System.Windows.Forms.Padding(5)
         Me.btnCetak.Name = "btnCetak"
-        Me.btnCetak.Size = New System.Drawing.Size(266, 45)
+        Me.btnCetak.Size = New System.Drawing.Size(266, 44)
         Me.btnCetak.TabIndex = 3
         Me.btnCetak.Text = "CETAK NOTA"
         Me.btnCetak.UseVisualStyleBackColor = False
@@ -534,7 +530,7 @@ Partial Class FrmRiwayatPenjualan
         Me.btnTutup.Location = New System.Drawing.Point(1534, 12)
         Me.btnTutup.Margin = New System.Windows.Forms.Padding(5)
         Me.btnTutup.Name = "btnTutup"
-        Me.btnTutup.Size = New System.Drawing.Size(200, 45)
+        Me.btnTutup.Size = New System.Drawing.Size(200, 44)
         Me.btnTutup.TabIndex = 4
         Me.btnTutup.Text = "TUTUP"
         Me.btnTutup.UseVisualStyleBackColor = False
@@ -599,7 +595,5 @@ Partial Class FrmRiwayatPenjualan
     Friend WithEvents lblInfo As Label
     Friend WithEvents lblTotalCaption As Label
     Friend WithEvents lblTotal As Label
-    Friend WithEvents btnCetak As Button
-    Friend WithEvents btnTutup As Button
 
 End Class

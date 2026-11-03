@@ -513,7 +513,7 @@ Partial Class FrmPembayaran
         Me.btnKonfirmasi.Name = "btnKonfirmasi"
         Me.btnKonfirmasi.Size = New System.Drawing.Size(386, 46)
         Me.btnKonfirmasi.TabIndex = 2
-        Me.btnKonfirmasi.Text = "KONFIRMASI BAYAR"
+        Me.btnKonfirmasi.Text = "CETAK NOTA"
         Me.btnKonfirmasi.UseVisualStyleBackColor = False
         '
         'tlpRoot
