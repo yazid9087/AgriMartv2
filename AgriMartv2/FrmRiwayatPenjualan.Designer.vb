@@ -89,7 +89,7 @@ Partial Class FrmRiwayatPenjualan
         Me.tlpRoot.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.tlpRoot.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.tlpRoot.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 76.0!))
-        Me.tlpRoot.Size = New System.Drawing.Size(1755, 1055)
+        Me.tlpRoot.Size = New System.Drawing.Size(1755, 1050)
         Me.tlpRoot.TabIndex = 0
         '
         'pnlHeader
@@ -109,7 +109,7 @@ Partial Class FrmRiwayatPenjualan
         Me.lblTitle.ForeColor = System.Drawing.Color.White
         Me.lblTitle.Location = New System.Drawing.Point(25, 12)
         Me.lblTitle.Name = "lblTitle"
-        Me.lblTitle.Size = New System.Drawing.Size(426, 52)
+        Me.lblTitle.Size = New System.Drawing.Size(504, 62)
         Me.lblTitle.TabIndex = 0
         Me.lblTitle.Text = "RIWAYAT PENJUALAN"
         '
@@ -170,7 +170,7 @@ Partial Class FrmRiwayatPenjualan
         Me.txtCari.Location = New System.Drawing.Point(106, 8)
         Me.txtCari.Margin = New System.Windows.Forms.Padding(3, 8, 10, 8)
         Me.txtCari.Name = "txtCari"
-        Me.txtCari.Size = New System.Drawing.Size(400, 30)
+        Me.txtCari.Size = New System.Drawing.Size(400, 34)
         Me.txtCari.TabIndex = 1
         '
         'lblDari
@@ -193,7 +193,7 @@ Partial Class FrmRiwayatPenjualan
         Me.dtpDari.Location = New System.Drawing.Point(622, 8)
         Me.dtpDari.Margin = New System.Windows.Forms.Padding(3, 8, 8, 8)
         Me.dtpDari.Name = "dtpDari"
-        Me.dtpDari.Size = New System.Drawing.Size(230, 27)
+        Me.dtpDari.Size = New System.Drawing.Size(230, 31)
         Me.dtpDari.TabIndex = 3
         '
         'lblSampai
@@ -216,7 +216,7 @@ Partial Class FrmRiwayatPenjualan
         Me.dtpSampai.Location = New System.Drawing.Point(1000, 8)
         Me.dtpSampai.Margin = New System.Windows.Forms.Padding(3, 8, 8, 8)
         Me.dtpSampai.Name = "dtpSampai"
-        Me.dtpSampai.Size = New System.Drawing.Size(230, 27)
+        Me.dtpSampai.Size = New System.Drawing.Size(230, 31)
         Me.dtpSampai.TabIndex = 5
         '
         'btnCari
@@ -260,7 +260,7 @@ Partial Class FrmRiwayatPenjualan
         Me.grpDaftar.Location = New System.Drawing.Point(3, 184)
         Me.grpDaftar.Name = "grpDaftar"
         Me.grpDaftar.Padding = New System.Windows.Forms.Padding(10, 8, 10, 10)
-        Me.grpDaftar.Size = New System.Drawing.Size(1749, 393)
+        Me.grpDaftar.Size = New System.Drawing.Size(1749, 390)
         Me.grpDaftar.TabIndex = 2
         Me.grpDaftar.TabStop = False
         Me.grpDaftar.Text = "Daftar Transaksi Penjualan"
@@ -298,7 +298,7 @@ Partial Class FrmRiwayatPenjualan
         Me.dgvTransaksi.Dock = System.Windows.Forms.DockStyle.Fill
         Me.dgvTransaksi.EnableHeadersVisualStyles = False
         Me.dgvTransaksi.GridColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.dgvTransaksi.Location = New System.Drawing.Point(10, 31)
+        Me.dgvTransaksi.Location = New System.Drawing.Point(10, 35)
         Me.dgvTransaksi.MultiSelect = False
         Me.dgvTransaksi.Name = "dgvTransaksi"
         Me.dgvTransaksi.ReadOnly = True
@@ -306,7 +306,7 @@ Partial Class FrmRiwayatPenjualan
         Me.dgvTransaksi.RowHeadersWidth = 82
         Me.dgvTransaksi.RowTemplate.Height = 30
         Me.dgvTransaksi.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvTransaksi.Size = New System.Drawing.Size(1729, 352)
+        Me.dgvTransaksi.Size = New System.Drawing.Size(1729, 345)
         Me.dgvTransaksi.TabIndex = 0
         '
         'colNoNota
@@ -350,10 +350,10 @@ Partial Class FrmRiwayatPenjualan
         Me.grpDetail.Controls.Add(Me.dgvDetail)
         Me.grpDetail.Dock = System.Windows.Forms.DockStyle.Fill
         Me.grpDetail.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Bold)
-        Me.grpDetail.Location = New System.Drawing.Point(3, 583)
+        Me.grpDetail.Location = New System.Drawing.Point(3, 580)
         Me.grpDetail.Name = "grpDetail"
         Me.grpDetail.Padding = New System.Windows.Forms.Padding(10, 8, 10, 10)
-        Me.grpDetail.Size = New System.Drawing.Size(1749, 393)
+        Me.grpDetail.Size = New System.Drawing.Size(1749, 390)
         Me.grpDetail.TabIndex = 3
         Me.grpDetail.TabStop = False
         Me.grpDetail.Text = "Detail Barang Transaksi"
@@ -391,7 +391,7 @@ Partial Class FrmRiwayatPenjualan
         Me.dgvDetail.Dock = System.Windows.Forms.DockStyle.Fill
         Me.dgvDetail.EnableHeadersVisualStyles = False
         Me.dgvDetail.GridColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.dgvDetail.Location = New System.Drawing.Point(10, 31)
+        Me.dgvDetail.Location = New System.Drawing.Point(10, 35)
         Me.dgvDetail.MultiSelect = False
         Me.dgvDetail.Name = "dgvDetail"
         Me.dgvDetail.ReadOnly = True
@@ -399,7 +399,7 @@ Partial Class FrmRiwayatPenjualan
         Me.dgvDetail.RowHeadersWidth = 82
         Me.dgvDetail.RowTemplate.Height = 30
         Me.dgvDetail.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvDetail.Size = New System.Drawing.Size(1729, 352)
+        Me.dgvDetail.Size = New System.Drawing.Size(1729, 345)
         Me.dgvDetail.TabIndex = 0
         '
         'colKodeBarang
@@ -443,9 +443,9 @@ Partial Class FrmRiwayatPenjualan
         Me.pnlFooter.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.pnlFooter.Controls.Add(Me.tlpFooter)
         Me.pnlFooter.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.pnlFooter.Location = New System.Drawing.Point(3, 982)
+        Me.pnlFooter.Location = New System.Drawing.Point(3, 976)
         Me.pnlFooter.Name = "pnlFooter"
-        Me.pnlFooter.Size = New System.Drawing.Size(1749, 70)
+        Me.pnlFooter.Size = New System.Drawing.Size(1749, 71)
         Me.pnlFooter.TabIndex = 4
         '
         'tlpFooter
@@ -465,7 +465,7 @@ Partial Class FrmRiwayatPenjualan
         Me.tlpFooter.Padding = New System.Windows.Forms.Padding(8, 7, 8, 7)
         Me.tlpFooter.RowCount = 1
         Me.tlpFooter.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.tlpFooter.Size = New System.Drawing.Size(1747, 68)
+        Me.tlpFooter.Size = New System.Drawing.Size(1747, 69)
         Me.tlpFooter.TabIndex = 0
         '
         'lblInfo
@@ -475,7 +475,7 @@ Partial Class FrmRiwayatPenjualan
         Me.lblInfo.ForeColor = System.Drawing.Color.DimGray
         Me.lblInfo.Location = New System.Drawing.Point(11, 7)
         Me.lblInfo.Name = "lblInfo"
-        Me.lblInfo.Size = New System.Drawing.Size(651, 54)
+        Me.lblInfo.Size = New System.Drawing.Size(651, 55)
         Me.lblInfo.TabIndex = 0
         Me.lblInfo.Text = "Pilih transaksi untuk melihat rincian."
         Me.lblInfo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -486,7 +486,7 @@ Partial Class FrmRiwayatPenjualan
         Me.lblTotalCaption.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
         Me.lblTotalCaption.Location = New System.Drawing.Point(668, 7)
         Me.lblTotalCaption.Name = "lblTotalCaption"
-        Me.lblTotalCaption.Size = New System.Drawing.Size(805, 54)
+        Me.lblTotalCaption.Size = New System.Drawing.Size(288, 55)
         Me.lblTotalCaption.TabIndex = 1
         Me.lblTotalCaption.Text = "Total Penjualan:"
         Me.lblTotalCaption.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -498,16 +498,48 @@ Partial Class FrmRiwayatPenjualan
         Me.lblTotal.ForeColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(135, Byte), Integer), CType(CType(65, Byte), Integer))
         Me.lblTotal.Location = New System.Drawing.Point(1479, 7)
         Me.lblTotal.Name = "lblTotal"
-        Me.lblTotal.Size = New System.Drawing.Size(236, 54)
+        Me.lblTotal.Size = New System.Drawing.Size(288, 55)
         Me.lblTotal.TabIndex = 2
         Me.lblTotal.Text = "Rp 0"
         Me.lblTotal.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'btnCetak
+        '
+        Me.btnCetak.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(135, Byte), Integer), CType(CType(65, Byte), Integer))
+        Me.btnCetak.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.btnCetak.FlatAppearance.BorderSize = 0
+        Me.btnCetak.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCetak.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.btnCetak.ForeColor = System.Drawing.Color.White
+        Me.btnCetak.Location = New System.Drawing.Point(1258, 12)
+        Me.btnCetak.Margin = New System.Windows.Forms.Padding(5)
+        Me.btnCetak.Name = "btnCetak"
+        Me.btnCetak.Size = New System.Drawing.Size(266, 44)
+        Me.btnCetak.TabIndex = 3
+        Me.btnCetak.Text = "CETAK NOTA"
+        Me.btnCetak.UseVisualStyleBackColor = False
+        '
+        'btnTutup
+        '
+        Me.btnTutup.BackColor = System.Drawing.Color.FromArgb(CType(CType(75, Byte), Integer), CType(CType(75, Byte), Integer), CType(CType(75, Byte), Integer))
+        Me.btnTutup.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.btnTutup.FlatAppearance.BorderSize = 0
+        Me.btnTutup.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnTutup.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.btnTutup.ForeColor = System.Drawing.Color.White
+        Me.btnTutup.Location = New System.Drawing.Point(1534, 12)
+        Me.btnTutup.Margin = New System.Windows.Forms.Padding(5)
+        Me.btnTutup.Name = "btnTutup"
+        Me.btnTutup.Size = New System.Drawing.Size(200, 44)
+        Me.btnTutup.TabIndex = 4
+        Me.btnTutup.Text = "TUTUP"
+        Me.btnTutup.UseVisualStyleBackColor = False
         '
         'FrmRiwayatPenjualan
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(247, Byte), Integer), CType(CType(245, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1755, 1055)
+        Me.ClientSize = New System.Drawing.Size(1755, 1050)
         Me.Controls.Add(Me.tlpRoot)
         Me.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)

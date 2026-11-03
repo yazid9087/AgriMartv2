@@ -27,6 +27,11 @@ Partial Class FormLogin
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.btnMasuk = New System.Windows.Forms.Button()
+        Me.pnlRole = New System.Windows.Forms.Panel()
+        Me.rbAdmin = New System.Windows.Forms.RadioButton()
+        Me.rbKasir = New System.Windows.Forms.RadioButton()
+        Me.rbOwner = New System.Windows.Forms.RadioButton()
         Me.lblRole = New System.Windows.Forms.Label()
         Me.chkTampilkanPassword = New System.Windows.Forms.CheckBox()
         Me.lblUsername = New System.Windows.Forms.Label()
@@ -35,11 +40,6 @@ Partial Class FormLogin
         Me.lblPassword = New System.Windows.Forms.Label()
         Me.lblDeskripsi = New System.Windows.Forms.Label()
         Me.txtKataSandi = New System.Windows.Forms.TextBox()
-        Me.pnlRole = New System.Windows.Forms.Panel()
-        Me.rbAdmin = New System.Windows.Forms.RadioButton()
-        Me.rbKasir = New System.Windows.Forms.RadioButton()
-        Me.rbOwner = New System.Windows.Forms.RadioButton()
-        Me.btnMasuk = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
@@ -93,82 +93,19 @@ Partial Class FormLogin
         Me.Panel3.Size = New System.Drawing.Size(515, 575)
         Me.Panel3.TabIndex = 0
         '
-        'lblRole
+        'btnMasuk
         '
-        Me.lblRole.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Bold)
-        Me.lblRole.ForeColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(82, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.lblRole.Location = New System.Drawing.Point(37, 146)
-        Me.lblRole.Name = "lblRole"
-        Me.lblRole.Size = New System.Drawing.Size(180, 25)
-        Me.lblRole.TabIndex = 3
-        Me.lblRole.Text = "Login Sebagai"
-        '
-        'chkTampilkanPassword
-        '
-        Me.chkTampilkanPassword.ForeColor = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(124, Byte), Integer), CType(CType(111, Byte), Integer))
-        Me.chkTampilkanPassword.Location = New System.Drawing.Point(42, 401)
-        Me.chkTampilkanPassword.Name = "chkTampilkanPassword"
-        Me.chkTampilkanPassword.Size = New System.Drawing.Size(235, 27)
-        Me.chkTampilkanPassword.TabIndex = 13
-        Me.chkTampilkanPassword.Text = "Tampilkan password"
-        '
-        'lblUsername
-        '
-        Me.lblUsername.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Bold)
-        Me.lblUsername.ForeColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(43, Byte), Integer))
-        Me.lblUsername.Location = New System.Drawing.Point(41, 247)
-        Me.lblUsername.Name = "lblUsername"
-        Me.lblUsername.Size = New System.Drawing.Size(200, 25)
-        Me.lblUsername.TabIndex = 8
-        Me.lblUsername.Text = "Username"
-        '
-        'lblJudulLogin
-        '
-        Me.lblJudulLogin.Font = New System.Drawing.Font("Segoe UI", 25.0!, System.Drawing.FontStyle.Bold)
-        Me.lblJudulLogin.ForeColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(82, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.lblJudulLogin.Location = New System.Drawing.Point(35, 32)
-        Me.lblJudulLogin.Name = "lblJudulLogin"
-        Me.lblJudulLogin.Size = New System.Drawing.Size(445, 60)
-        Me.lblJudulLogin.TabIndex = 2
-        Me.lblJudulLogin.Text = "Welcome back!"
-        '
-        'txtNamaPengguna
-        '
-        Me.txtNamaPengguna.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtNamaPengguna.Font = New System.Drawing.Font("Segoe UI", 12.0!)
-        Me.txtNamaPengguna.Location = New System.Drawing.Point(41, 279)
-        Me.txtNamaPengguna.Name = "txtNamaPengguna"
-        Me.txtNamaPengguna.Size = New System.Drawing.Size(437, 34)
-        Me.txtNamaPengguna.TabIndex = 9
-        '
-        'lblPassword
-        '
-        Me.lblPassword.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Bold)
-        Me.lblPassword.ForeColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(43, Byte), Integer))
-        Me.lblPassword.Location = New System.Drawing.Point(41, 324)
-        Me.lblPassword.Name = "lblPassword"
-        Me.lblPassword.Size = New System.Drawing.Size(200, 25)
-        Me.lblPassword.TabIndex = 10
-        Me.lblPassword.Text = "Password"
-        '
-        'lblDeskripsi
-        '
-        Me.lblDeskripsi.ForeColor = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(124, Byte), Integer), CType(CType(111, Byte), Integer))
-        Me.lblDeskripsi.Location = New System.Drawing.Point(39, 95)
-        Me.lblDeskripsi.Name = "lblDeskripsi"
-        Me.lblDeskripsi.Size = New System.Drawing.Size(438, 27)
-        Me.lblDeskripsi.TabIndex = 3
-        Me.lblDeskripsi.Text = "Masuk untuk mengelola aktivitas toko pertanian."
-        '
-        'txtKataSandi
-        '
-        Me.txtKataSandi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtKataSandi.Font = New System.Drawing.Font("Segoe UI", 12.0!)
-        Me.txtKataSandi.Location = New System.Drawing.Point(41, 356)
-        Me.txtKataSandi.Name = "txtKataSandi"
-        Me.txtKataSandi.Size = New System.Drawing.Size(437, 34)
-        Me.txtKataSandi.TabIndex = 11
-        Me.txtKataSandi.UseSystemPasswordChar = True
+        Me.btnMasuk.BackColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(82, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.btnMasuk.FlatAppearance.BorderSize = 0
+        Me.btnMasuk.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnMasuk.Font = New System.Drawing.Font("Segoe UI", 11.0!, System.Drawing.FontStyle.Bold)
+        Me.btnMasuk.ForeColor = System.Drawing.Color.White
+        Me.btnMasuk.Location = New System.Drawing.Point(40, 449)
+        Me.btnMasuk.Name = "btnMasuk"
+        Me.btnMasuk.Size = New System.Drawing.Size(437, 46)
+        Me.btnMasuk.TabIndex = 11
+        Me.btnMasuk.Text = "MASUK "
+        Me.btnMasuk.UseVisualStyleBackColor = False
         '
         'pnlRole
         '
@@ -222,23 +159,86 @@ Partial Class FormLogin
         Me.rbOwner.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.rbOwner.UseVisualStyleBackColor = False
         '
-        'btnMasuk
+        'lblRole
         '
-        Me.btnMasuk.BackColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(82, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.btnMasuk.FlatAppearance.BorderSize = 0
-        Me.btnMasuk.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnMasuk.Font = New System.Drawing.Font("Segoe UI", 11.0!, System.Drawing.FontStyle.Bold)
-        Me.btnMasuk.ForeColor = System.Drawing.Color.White
-        Me.btnMasuk.Location = New System.Drawing.Point(40, 449)
-        Me.btnMasuk.Name = "btnMasuk"
-        Me.btnMasuk.Size = New System.Drawing.Size(437, 46)
-        Me.btnMasuk.TabIndex = 11
-        Me.btnMasuk.Text = "MASUK "
-        Me.btnMasuk.UseVisualStyleBackColor = False
+        Me.lblRole.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.lblRole.ForeColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(82, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.lblRole.Location = New System.Drawing.Point(37, 146)
+        Me.lblRole.Name = "lblRole"
+        Me.lblRole.Size = New System.Drawing.Size(180, 25)
+        Me.lblRole.TabIndex = 3
+        Me.lblRole.Text = "Login Sebagai"
+        '
+        'chkTampilkanPassword
+        '
+        Me.chkTampilkanPassword.ForeColor = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(124, Byte), Integer), CType(CType(111, Byte), Integer))
+        Me.chkTampilkanPassword.Location = New System.Drawing.Point(42, 401)
+        Me.chkTampilkanPassword.Name = "chkTampilkanPassword"
+        Me.chkTampilkanPassword.Size = New System.Drawing.Size(235, 27)
+        Me.chkTampilkanPassword.TabIndex = 13
+        Me.chkTampilkanPassword.Text = "Tampilkan password"
+        '
+        'lblUsername
+        '
+        Me.lblUsername.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.lblUsername.ForeColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(43, Byte), Integer))
+        Me.lblUsername.Location = New System.Drawing.Point(41, 247)
+        Me.lblUsername.Name = "lblUsername"
+        Me.lblUsername.Size = New System.Drawing.Size(200, 25)
+        Me.lblUsername.TabIndex = 8
+        Me.lblUsername.Text = "Username"
+        '
+        'lblJudulLogin
+        '
+        Me.lblJudulLogin.Font = New System.Drawing.Font("Segoe UI", 25.0!, System.Drawing.FontStyle.Bold)
+        Me.lblJudulLogin.ForeColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(82, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.lblJudulLogin.Location = New System.Drawing.Point(35, 32)
+        Me.lblJudulLogin.Name = "lblJudulLogin"
+        Me.lblJudulLogin.Size = New System.Drawing.Size(445, 60)
+        Me.lblJudulLogin.TabIndex = 2
+        Me.lblJudulLogin.Text = "Welcome back!"
+        '
+        'txtNamaPengguna
+        '
+        Me.txtNamaPengguna.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtNamaPengguna.Font = New System.Drawing.Font("Segoe UI", 12.0!)
+        Me.txtNamaPengguna.Location = New System.Drawing.Point(41, 279)
+        Me.txtNamaPengguna.Name = "txtNamaPengguna"
+        Me.txtNamaPengguna.Size = New System.Drawing.Size(437, 39)
+        Me.txtNamaPengguna.TabIndex = 9
+        '
+        'lblPassword
+        '
+        Me.lblPassword.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.lblPassword.ForeColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(43, Byte), Integer))
+        Me.lblPassword.Location = New System.Drawing.Point(41, 324)
+        Me.lblPassword.Name = "lblPassword"
+        Me.lblPassword.Size = New System.Drawing.Size(200, 25)
+        Me.lblPassword.TabIndex = 10
+        Me.lblPassword.Text = "Password"
+        '
+        'lblDeskripsi
+        '
+        Me.lblDeskripsi.ForeColor = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(124, Byte), Integer), CType(CType(111, Byte), Integer))
+        Me.lblDeskripsi.Location = New System.Drawing.Point(39, 95)
+        Me.lblDeskripsi.Name = "lblDeskripsi"
+        Me.lblDeskripsi.Size = New System.Drawing.Size(438, 27)
+        Me.lblDeskripsi.TabIndex = 3
+        Me.lblDeskripsi.Text = "Masuk untuk mengelola aktivitas toko pertanian."
+        '
+        'txtKataSandi
+        '
+        Me.txtKataSandi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtKataSandi.Font = New System.Drawing.Font("Segoe UI", 12.0!)
+        Me.txtKataSandi.Location = New System.Drawing.Point(41, 356)
+        Me.txtKataSandi.Name = "txtKataSandi"
+        Me.txtKataSandi.Size = New System.Drawing.Size(437, 39)
+        Me.txtKataSandi.TabIndex = 11
+        Me.txtKataSandi.UseSystemPasswordChar = True
         '
         'FormLogin
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 23.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(11.0!, 28.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(247, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(247, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1080, 640)

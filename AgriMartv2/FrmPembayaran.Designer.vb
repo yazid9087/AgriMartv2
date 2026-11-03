@@ -89,7 +89,7 @@ Partial Class FrmPembayaran
         Me.lblTitle.ForeColor = System.Drawing.Color.White
         Me.lblTitle.Location = New System.Drawing.Point(24, 17)
         Me.lblTitle.Name = "lblTitle"
-        Me.lblTitle.Size = New System.Drawing.Size(258, 47)
+        Me.lblTitle.Size = New System.Drawing.Size(309, 57)
         Me.lblTitle.TabIndex = 0
         Me.lblTitle.Text = "PEMBAYARAN"
         '
@@ -117,11 +117,11 @@ Partial Class FrmPembayaran
         Me.tlpInformasi.Controls.Add(Me.flpTanggal, 1, 0)
         Me.tlpInformasi.Controls.Add(Me.flpKasir, 2, 0)
         Me.tlpInformasi.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.tlpInformasi.Location = New System.Drawing.Point(10, 30)
+        Me.tlpInformasi.Location = New System.Drawing.Point(10, 34)
         Me.tlpInformasi.Name = "tlpInformasi"
         Me.tlpInformasi.RowCount = 1
         Me.tlpInformasi.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.tlpInformasi.Size = New System.Drawing.Size(1726, 79)
+        Me.tlpInformasi.Size = New System.Drawing.Size(1726, 75)
         Me.tlpInformasi.TabIndex = 0
         '
         'flpNoNota
@@ -132,7 +132,7 @@ Partial Class FrmPembayaran
         Me.flpNoNota.Location = New System.Drawing.Point(3, 3)
         Me.flpNoNota.Name = "flpNoNota"
         Me.flpNoNota.Padding = New System.Windows.Forms.Padding(8, 8, 4, 4)
-        Me.flpNoNota.Size = New System.Drawing.Size(569, 73)
+        Me.flpNoNota.Size = New System.Drawing.Size(569, 69)
         Me.flpNoNota.TabIndex = 0
         Me.flpNoNota.WrapContents = False
         '
@@ -143,7 +143,7 @@ Partial Class FrmPembayaran
         Me.lblNoNotaCaption.Location = New System.Drawing.Point(8, 13)
         Me.lblNoNotaCaption.Margin = New System.Windows.Forms.Padding(0, 5, 7, 0)
         Me.lblNoNotaCaption.Name = "lblNoNotaCaption"
-        Me.lblNoNotaCaption.Size = New System.Drawing.Size(82, 23)
+        Me.lblNoNotaCaption.Size = New System.Drawing.Size(98, 28)
         Me.lblNoNotaCaption.TabIndex = 0
         Me.lblNoNotaCaption.Text = "No. Nota"
         '
@@ -151,10 +151,10 @@ Partial Class FrmPembayaran
         '
         Me.lblNoNotaValue.AutoSize = True
         Me.lblNoNotaValue.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Bold)
-        Me.lblNoNotaValue.Location = New System.Drawing.Point(97, 13)
+        Me.lblNoNotaValue.Location = New System.Drawing.Point(113, 13)
         Me.lblNoNotaValue.Margin = New System.Windows.Forms.Padding(0, 5, 0, 0)
         Me.lblNoNotaValue.Name = "lblNoNotaValue"
-        Me.lblNoNotaValue.Size = New System.Drawing.Size(17, 23)
+        Me.lblNoNotaValue.Size = New System.Drawing.Size(20, 28)
         Me.lblNoNotaValue.TabIndex = 1
         Me.lblNoNotaValue.Text = "-"
         '
@@ -166,7 +166,7 @@ Partial Class FrmPembayaran
         Me.flpTanggal.Location = New System.Drawing.Point(578, 3)
         Me.flpTanggal.Name = "flpTanggal"
         Me.flpTanggal.Padding = New System.Windows.Forms.Padding(8, 8, 4, 4)
-        Me.flpTanggal.Size = New System.Drawing.Size(569, 73)
+        Me.flpTanggal.Size = New System.Drawing.Size(569, 69)
         Me.flpTanggal.TabIndex = 1
         Me.flpTanggal.WrapContents = False
         '
@@ -177,7 +177,7 @@ Partial Class FrmPembayaran
         Me.lblTanggalCaption.Location = New System.Drawing.Point(8, 13)
         Me.lblTanggalCaption.Margin = New System.Windows.Forms.Padding(0, 5, 7, 0)
         Me.lblTanggalCaption.Name = "lblTanggalCaption"
-        Me.lblTanggalCaption.Size = New System.Drawing.Size(74, 23)
+        Me.lblTanggalCaption.Size = New System.Drawing.Size(86, 28)
         Me.lblTanggalCaption.TabIndex = 0
         Me.lblTanggalCaption.Text = "Tanggal"
         '
@@ -185,10 +185,10 @@ Partial Class FrmPembayaran
         '
         Me.lblTanggalValue.AutoSize = True
         Me.lblTanggalValue.Font = New System.Drawing.Font("Segoe UI", 10.0!)
-        Me.lblTanggalValue.Location = New System.Drawing.Point(89, 13)
+        Me.lblTanggalValue.Location = New System.Drawing.Point(101, 13)
         Me.lblTanggalValue.Margin = New System.Windows.Forms.Padding(0, 5, 0, 0)
         Me.lblTanggalValue.Name = "lblTanggalValue"
-        Me.lblTanggalValue.Size = New System.Drawing.Size(17, 23)
+        Me.lblTanggalValue.Size = New System.Drawing.Size(20, 28)
         Me.lblTanggalValue.TabIndex = 1
         Me.lblTanggalValue.Text = "-"
         '
@@ -200,7 +200,7 @@ Partial Class FrmPembayaran
         Me.flpKasir.Location = New System.Drawing.Point(1153, 3)
         Me.flpKasir.Name = "flpKasir"
         Me.flpKasir.Padding = New System.Windows.Forms.Padding(8, 8, 4, 4)
-        Me.flpKasir.Size = New System.Drawing.Size(570, 73)
+        Me.flpKasir.Size = New System.Drawing.Size(570, 69)
         Me.flpKasir.TabIndex = 2
         Me.flpKasir.WrapContents = False
         '
@@ -211,7 +211,7 @@ Partial Class FrmPembayaran
         Me.lblKasirCaption.Location = New System.Drawing.Point(8, 13)
         Me.lblKasirCaption.Margin = New System.Windows.Forms.Padding(0, 5, 7, 0)
         Me.lblKasirCaption.Name = "lblKasirCaption"
-        Me.lblKasirCaption.Size = New System.Drawing.Size(49, 23)
+        Me.lblKasirCaption.Size = New System.Drawing.Size(59, 28)
         Me.lblKasirCaption.TabIndex = 0
         Me.lblKasirCaption.Text = "Kasir"
         '
@@ -219,10 +219,10 @@ Partial Class FrmPembayaran
         '
         Me.lblKasirValue.AutoSize = True
         Me.lblKasirValue.Font = New System.Drawing.Font("Segoe UI", 10.0!)
-        Me.lblKasirValue.Location = New System.Drawing.Point(64, 13)
+        Me.lblKasirValue.Location = New System.Drawing.Point(74, 13)
         Me.lblKasirValue.Margin = New System.Windows.Forms.Padding(0, 5, 0, 0)
         Me.lblKasirValue.Name = "lblKasirValue"
-        Me.lblKasirValue.Size = New System.Drawing.Size(17, 23)
+        Me.lblKasirValue.Size = New System.Drawing.Size(20, 28)
         Me.lblKasirValue.TabIndex = 1
         Me.lblKasirValue.Text = "-"
         '
@@ -238,7 +238,7 @@ Partial Class FrmPembayaran
         Me.tlpKonten.Name = "tlpKonten"
         Me.tlpKonten.RowCount = 1
         Me.tlpKonten.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.tlpKonten.Size = New System.Drawing.Size(1746, 746)
+        Me.tlpKonten.Size = New System.Drawing.Size(1746, 741)
         Me.tlpKonten.TabIndex = 2
         '
         'grpDetail
@@ -250,7 +250,7 @@ Partial Class FrmPembayaran
         Me.grpDetail.Location = New System.Drawing.Point(3, 3)
         Me.grpDetail.Name = "grpDetail"
         Me.grpDetail.Padding = New System.Windows.Forms.Padding(10, 8, 10, 10)
-        Me.grpDetail.Size = New System.Drawing.Size(1128, 740)
+        Me.grpDetail.Size = New System.Drawing.Size(1128, 735)
         Me.grpDetail.TabIndex = 0
         Me.grpDetail.TabStop = False
         Me.grpDetail.Text = "Ringkasan Barang"
@@ -287,7 +287,7 @@ Partial Class FrmPembayaran
         Me.dgvDetailBarang.Dock = System.Windows.Forms.DockStyle.Fill
         Me.dgvDetailBarang.EnableHeadersVisualStyles = False
         Me.dgvDetailBarang.GridColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.dgvDetailBarang.Location = New System.Drawing.Point(10, 30)
+        Me.dgvDetailBarang.Location = New System.Drawing.Point(10, 34)
         Me.dgvDetailBarang.MultiSelect = False
         Me.dgvDetailBarang.Name = "dgvDetailBarang"
         Me.dgvDetailBarang.ReadOnly = True
@@ -295,7 +295,7 @@ Partial Class FrmPembayaran
         Me.dgvDetailBarang.RowHeadersWidth = 82
         Me.dgvDetailBarang.RowTemplate.Height = 32
         Me.dgvDetailBarang.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvDetailBarang.Size = New System.Drawing.Size(1108, 700)
+        Me.dgvDetailBarang.Size = New System.Drawing.Size(1108, 691)
         Me.dgvDetailBarang.TabIndex = 0
         '
         'grpPembayaran
@@ -307,7 +307,7 @@ Partial Class FrmPembayaran
         Me.grpPembayaran.Location = New System.Drawing.Point(1137, 3)
         Me.grpPembayaran.Name = "grpPembayaran"
         Me.grpPembayaran.Padding = New System.Windows.Forms.Padding(12, 8, 12, 10)
-        Me.grpPembayaran.Size = New System.Drawing.Size(606, 740)
+        Me.grpPembayaran.Size = New System.Drawing.Size(606, 735)
         Me.grpPembayaran.TabIndex = 1
         Me.grpPembayaran.TabStop = False
         Me.grpPembayaran.Text = "Rincian Pembayaran"
@@ -326,7 +326,7 @@ Partial Class FrmPembayaran
         Me.tlpPembayaran.Controls.Add(Me.lblKembalianValue, 0, 7)
         Me.tlpPembayaran.Controls.Add(Me.lblPetunjuk, 0, 8)
         Me.tlpPembayaran.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.tlpPembayaran.Location = New System.Drawing.Point(12, 30)
+        Me.tlpPembayaran.Location = New System.Drawing.Point(12, 34)
         Me.tlpPembayaran.Name = "tlpPembayaran"
         Me.tlpPembayaran.RowCount = 9
         Me.tlpPembayaran.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.0!))
@@ -338,7 +338,7 @@ Partial Class FrmPembayaran
         Me.tlpPembayaran.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.0!))
         Me.tlpPembayaran.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.0!))
         Me.tlpPembayaran.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.0!))
-        Me.tlpPembayaran.Size = New System.Drawing.Size(582, 700)
+        Me.tlpPembayaran.Size = New System.Drawing.Size(582, 691)
         Me.tlpPembayaran.TabIndex = 0
         '
         'lblTotalCaption
@@ -347,7 +347,7 @@ Partial Class FrmPembayaran
         Me.lblTotalCaption.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Bold)
         Me.lblTotalCaption.Location = New System.Drawing.Point(3, 0)
         Me.lblTotalCaption.Name = "lblTotalCaption"
-        Me.lblTotalCaption.Size = New System.Drawing.Size(576, 63)
+        Me.lblTotalCaption.Size = New System.Drawing.Size(576, 62)
         Me.lblTotalCaption.TabIndex = 0
         Me.lblTotalCaption.Text = "Total Belanja"
         Me.lblTotalCaption.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -357,9 +357,9 @@ Partial Class FrmPembayaran
         Me.lblTotalValue.Dock = System.Windows.Forms.DockStyle.Fill
         Me.lblTotalValue.Font = New System.Drawing.Font("Segoe UI", 21.0!, System.Drawing.FontStyle.Bold)
         Me.lblTotalValue.ForeColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(135, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.lblTotalValue.Location = New System.Drawing.Point(3, 63)
+        Me.lblTotalValue.Location = New System.Drawing.Point(3, 62)
         Me.lblTotalValue.Name = "lblTotalValue"
-        Me.lblTotalValue.Size = New System.Drawing.Size(576, 112)
+        Me.lblTotalValue.Size = New System.Drawing.Size(576, 110)
         Me.lblTotalValue.TabIndex = 1
         Me.lblTotalValue.Text = "Rp 0"
         Me.lblTotalValue.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -368,9 +368,9 @@ Partial Class FrmPembayaran
         '
         Me.lblMetodeCaption.Dock = System.Windows.Forms.DockStyle.Fill
         Me.lblMetodeCaption.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Bold)
-        Me.lblMetodeCaption.Location = New System.Drawing.Point(3, 175)
+        Me.lblMetodeCaption.Location = New System.Drawing.Point(3, 172)
         Me.lblMetodeCaption.Name = "lblMetodeCaption"
-        Me.lblMetodeCaption.Size = New System.Drawing.Size(576, 63)
+        Me.lblMetodeCaption.Size = New System.Drawing.Size(576, 62)
         Me.lblMetodeCaption.TabIndex = 2
         Me.lblMetodeCaption.Text = "Metode Pembayaran"
         Me.lblMetodeCaption.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -381,19 +381,19 @@ Partial Class FrmPembayaran
         Me.cmbMetodePembayaran.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbMetodePembayaran.Font = New System.Drawing.Font("Segoe UI", 10.0!)
         Me.cmbMetodePembayaran.FormattingEnabled = True
-        Me.cmbMetodePembayaran.Location = New System.Drawing.Point(0, 242)
+        Me.cmbMetodePembayaran.Location = New System.Drawing.Point(0, 238)
         Me.cmbMetodePembayaran.Margin = New System.Windows.Forms.Padding(0, 4, 0, 4)
         Me.cmbMetodePembayaran.Name = "cmbMetodePembayaran"
-        Me.cmbMetodePembayaran.Size = New System.Drawing.Size(582, 31)
+        Me.cmbMetodePembayaran.Size = New System.Drawing.Size(582, 36)
         Me.cmbMetodePembayaran.TabIndex = 3
         '
         'lblUangBayarCaption
         '
         Me.lblUangBayarCaption.Dock = System.Windows.Forms.DockStyle.Fill
         Me.lblUangBayarCaption.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Bold)
-        Me.lblUangBayarCaption.Location = New System.Drawing.Point(3, 322)
+        Me.lblUangBayarCaption.Location = New System.Drawing.Point(3, 316)
         Me.lblUangBayarCaption.Name = "lblUangBayarCaption"
-        Me.lblUangBayarCaption.Size = New System.Drawing.Size(576, 63)
+        Me.lblUangBayarCaption.Size = New System.Drawing.Size(576, 62)
         Me.lblUangBayarCaption.TabIndex = 4
         Me.lblUangBayarCaption.Text = "Uang Bayar"
         Me.lblUangBayarCaption.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -402,10 +402,10 @@ Partial Class FrmPembayaran
         '
         Me.txtUangBayar.Dock = System.Windows.Forms.DockStyle.Fill
         Me.txtUangBayar.Font = New System.Drawing.Font("Segoe UI", 12.0!)
-        Me.txtUangBayar.Location = New System.Drawing.Point(0, 389)
+        Me.txtUangBayar.Location = New System.Drawing.Point(0, 382)
         Me.txtUangBayar.Margin = New System.Windows.Forms.Padding(0, 4, 0, 4)
         Me.txtUangBayar.Name = "txtUangBayar"
-        Me.txtUangBayar.Size = New System.Drawing.Size(582, 34)
+        Me.txtUangBayar.Size = New System.Drawing.Size(582, 39)
         Me.txtUangBayar.TabIndex = 5
         Me.txtUangBayar.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -413,9 +413,9 @@ Partial Class FrmPembayaran
         '
         Me.lblKembalianCaption.Dock = System.Windows.Forms.DockStyle.Fill
         Me.lblKembalianCaption.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Bold)
-        Me.lblKembalianCaption.Location = New System.Drawing.Point(3, 469)
+        Me.lblKembalianCaption.Location = New System.Drawing.Point(3, 460)
         Me.lblKembalianCaption.Name = "lblKembalianCaption"
-        Me.lblKembalianCaption.Size = New System.Drawing.Size(576, 63)
+        Me.lblKembalianCaption.Size = New System.Drawing.Size(576, 62)
         Me.lblKembalianCaption.TabIndex = 6
         Me.lblKembalianCaption.Text = "Kembalian"
         Me.lblKembalianCaption.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -425,9 +425,9 @@ Partial Class FrmPembayaran
         Me.lblKembalianValue.Dock = System.Windows.Forms.DockStyle.Fill
         Me.lblKembalianValue.Font = New System.Drawing.Font("Segoe UI", 17.0!, System.Drawing.FontStyle.Bold)
         Me.lblKembalianValue.ForeColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(135, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.lblKembalianValue.Location = New System.Drawing.Point(3, 532)
+        Me.lblKembalianValue.Location = New System.Drawing.Point(3, 522)
         Me.lblKembalianValue.Name = "lblKembalianValue"
-        Me.lblKembalianValue.Size = New System.Drawing.Size(576, 84)
+        Me.lblKembalianValue.Size = New System.Drawing.Size(576, 82)
         Me.lblKembalianValue.TabIndex = 7
         Me.lblKembalianValue.Text = "Rp 0"
         Me.lblKembalianValue.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -437,9 +437,9 @@ Partial Class FrmPembayaran
         Me.lblPetunjuk.Dock = System.Windows.Forms.DockStyle.Fill
         Me.lblPetunjuk.Font = New System.Drawing.Font("Segoe UI", 8.5!)
         Me.lblPetunjuk.ForeColor = System.Drawing.Color.DimGray
-        Me.lblPetunjuk.Location = New System.Drawing.Point(3, 616)
+        Me.lblPetunjuk.Location = New System.Drawing.Point(3, 604)
         Me.lblPetunjuk.Name = "lblPetunjuk"
-        Me.lblPetunjuk.Size = New System.Drawing.Size(576, 84)
+        Me.lblPetunjuk.Size = New System.Drawing.Size(576, 87)
         Me.lblPetunjuk.TabIndex = 8
         Me.lblPetunjuk.Text = "Masukkan nominal uang yang diterima dari pelanggan."
         '
@@ -449,7 +449,7 @@ Partial Class FrmPembayaran
         Me.pnlFooter.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.pnlFooter.Controls.Add(Me.tlpFooter)
         Me.pnlFooter.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.pnlFooter.Location = New System.Drawing.Point(3, 976)
+        Me.pnlFooter.Location = New System.Drawing.Point(3, 971)
         Me.pnlFooter.Name = "pnlFooter"
         Me.pnlFooter.Size = New System.Drawing.Size(1746, 76)
         Me.pnlFooter.TabIndex = 3
@@ -513,7 +513,7 @@ Partial Class FrmPembayaran
         Me.btnKonfirmasi.Name = "btnKonfirmasi"
         Me.btnKonfirmasi.Size = New System.Drawing.Size(386, 46)
         Me.btnKonfirmasi.TabIndex = 2
-        Me.btnKonfirmasi.Text = "BAYAR DAN CETAK NOTA"
+        Me.btnKonfirmasi.Text = "KONFIRMASI BAYAR"
         Me.btnKonfirmasi.UseVisualStyleBackColor = False
         '
         'tlpRoot
@@ -533,14 +533,14 @@ Partial Class FrmPembayaran
         Me.tlpRoot.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 123.0!))
         Me.tlpRoot.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
         Me.tlpRoot.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 82.0!))
-        Me.tlpRoot.Size = New System.Drawing.Size(1752, 1055)
+        Me.tlpRoot.Size = New System.Drawing.Size(1752, 1050)
         Me.tlpRoot.TabIndex = 0
         '
         'FrmPembayaran
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(247, Byte), Integer), CType(CType(245, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1752, 1055)
+        Me.ClientSize = New System.Drawing.Size(1752, 1050)
         Me.Controls.Add(Me.tlpRoot)
         Me.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
