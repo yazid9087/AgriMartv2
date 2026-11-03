@@ -22,7 +22,8 @@ Partial Class FrmUtamaKasir
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle15 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmUtamaKasir))
         Me.pnlHeader = New System.Windows.Forms.Panel()
         Me.btnLogout = New System.Windows.Forms.Button()
         Me.lblNamaKasir = New System.Windows.Forms.Label()
@@ -48,6 +49,9 @@ Partial Class FrmUtamaKasir
         Me.KeranjangSubtotal = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.KeranjangHapus = New System.Windows.Forms.DataGridViewButtonColumn()
         Me.pnlPembayaran = New System.Windows.Forms.Panel()
+        Me.cmbMetodePembayaran = New System.Windows.Forms.ComboBox()
+        Me.lblMetodePembayaran = New System.Windows.Forms.Label()
+        Me.btnBayar = New System.Windows.Forms.Button()
         Me.lblNominalKembalian = New System.Windows.Forms.Label()
         Me.txtUangBayar = New System.Windows.Forms.TextBox()
         Me.lblNominalTotalBelanja = New System.Windows.Forms.Label()
@@ -57,9 +61,6 @@ Partial Class FrmUtamaKasir
         Me.pnlHeaderKeranjang = New System.Windows.Forms.Panel()
         Me.lblHeaderKeranjang = New System.Windows.Forms.Label()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
-        Me.btnBayar = New System.Windows.Forms.Button()
-        Me.lblMetodePembayaran = New System.Windows.Forms.Label()
-        Me.cmbMetodePembayaran = New System.Windows.Forms.ComboBox()
         Me.pnlHeader.SuspendLayout()
         CType(Me.splitUtama, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.splitUtama.Panel1.SuspendLayout()
@@ -80,8 +81,9 @@ Partial Class FrmUtamaKasir
         Me.pnlHeader.Controls.Add(Me.lblNamaAplikasi)
         Me.pnlHeader.Dock = System.Windows.Forms.DockStyle.Top
         Me.pnlHeader.Location = New System.Drawing.Point(0, 0)
+        Me.pnlHeader.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.pnlHeader.Name = "pnlHeader"
-        Me.pnlHeader.Size = New System.Drawing.Size(1753, 105)
+        Me.pnlHeader.Size = New System.Drawing.Size(1169, 67)
         Me.pnlHeader.TabIndex = 0
         '
         'btnLogout
@@ -91,9 +93,10 @@ Partial Class FrmUtamaKasir
         Me.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnLogout.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnLogout.ForeColor = System.Drawing.Color.DarkGreen
-        Me.btnLogout.Location = New System.Drawing.Point(1552, 34)
+        Me.btnLogout.Location = New System.Drawing.Point(1035, 22)
+        Me.btnLogout.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnLogout.Name = "btnLogout"
-        Me.btnLogout.Size = New System.Drawing.Size(170, 61)
+        Me.btnLogout.Size = New System.Drawing.Size(113, 39)
         Me.btnLogout.TabIndex = 2
         Me.btnLogout.Text = "Logout"
         Me.btnLogout.UseVisualStyleBackColor = False
@@ -105,9 +108,10 @@ Partial Class FrmUtamaKasir
         Me.lblNamaKasir.BackColor = System.Drawing.Color.Transparent
         Me.lblNamaKasir.Font = New System.Drawing.Font("Segoe UI", 10.125!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblNamaKasir.ForeColor = System.Drawing.Color.White
-        Me.lblNamaKasir.Location = New System.Drawing.Point(1360, 48)
+        Me.lblNamaKasir.Location = New System.Drawing.Point(907, 31)
+        Me.lblNamaKasir.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblNamaKasir.Name = "lblNamaKasir"
-        Me.lblNamaKasir.Size = New System.Drawing.Size(156, 37)
+        Me.lblNamaKasir.Size = New System.Drawing.Size(97, 23)
         Me.lblNamaKasir.TabIndex = 1
         Me.lblNamaKasir.Text = "Kasir: acad"
         '
@@ -117,9 +121,10 @@ Partial Class FrmUtamaKasir
         Me.lblNamaAplikasi.BackColor = System.Drawing.Color.Transparent
         Me.lblNamaAplikasi.Font = New System.Drawing.Font("Segoe UI", 16.125!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblNamaAplikasi.ForeColor = System.Drawing.Color.White
-        Me.lblNamaAplikasi.Location = New System.Drawing.Point(20, 20)
+        Me.lblNamaAplikasi.Location = New System.Drawing.Point(13, 13)
+        Me.lblNamaAplikasi.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblNamaAplikasi.Name = "lblNamaAplikasi"
-        Me.lblNamaAplikasi.Size = New System.Drawing.Size(393, 59)
+        Me.lblNamaAplikasi.Size = New System.Drawing.Size(247, 37)
         Me.lblNamaAplikasi.TabIndex = 0
         Me.lblNamaAplikasi.Text = "" & Global.Microsoft.VisualBasic.ChrW(9) & "TOKO PERTANIAN"
         Me.lblNamaAplikasi.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -127,7 +132,8 @@ Partial Class FrmUtamaKasir
         'splitUtama
         '
         Me.splitUtama.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.splitUtama.Location = New System.Drawing.Point(0, 105)
+        Me.splitUtama.Location = New System.Drawing.Point(0, 67)
+        Me.splitUtama.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.splitUtama.Name = "splitUtama"
         '
         'splitUtama.Panel1
@@ -140,8 +146,9 @@ Partial Class FrmUtamaKasir
         Me.splitUtama.Panel2.Controls.Add(Me.dgvKeranjang)
         Me.splitUtama.Panel2.Controls.Add(Me.pnlPembayaran)
         Me.splitUtama.Panel2.Controls.Add(Me.pnlHeaderKeranjang)
-        Me.splitUtama.Size = New System.Drawing.Size(1753, 687)
-        Me.splitUtama.SplitterDistance = 650
+        Me.splitUtama.Size = New System.Drawing.Size(1169, 440)
+        Me.splitUtama.SplitterDistance = 433
+        Me.splitUtama.SplitterWidth = 3
         Me.splitUtama.TabIndex = 1
         '
         'dgvBarang
@@ -152,21 +159,22 @@ Partial Class FrmUtamaKasir
         Me.dgvBarang.BackgroundColor = System.Drawing.Color.White
         Me.dgvBarang.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.dgvBarang.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
-        DataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle15.BackColor = System.Drawing.Color.Green
-        DataGridViewCellStyle15.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle15.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle15.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvBarang.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle15
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.Green
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvBarang.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.dgvBarang.ColumnHeadersHeight = 35
         Me.dgvBarang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
         Me.dgvBarang.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.KodeBarang, Me.NamaBarang, Me.Kategori, Me.Satuan, Me.HargaJual, Me.Stok})
         Me.dgvBarang.Dock = System.Windows.Forms.DockStyle.Fill
         Me.dgvBarang.EnableHeadersVisualStyles = False
         Me.dgvBarang.GridColor = System.Drawing.Color.Gainsboro
-        Me.dgvBarang.Location = New System.Drawing.Point(0, 120)
+        Me.dgvBarang.Location = New System.Drawing.Point(0, 77)
+        Me.dgvBarang.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.dgvBarang.MultiSelect = False
         Me.dgvBarang.Name = "dgvBarang"
         Me.dgvBarang.ReadOnly = True
@@ -174,7 +182,7 @@ Partial Class FrmUtamaKasir
         Me.dgvBarang.RowHeadersWidth = 82
         Me.dgvBarang.RowTemplate.Height = 33
         Me.dgvBarang.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvBarang.Size = New System.Drawing.Size(650, 567)
+        Me.dgvBarang.Size = New System.Drawing.Size(433, 363)
         Me.dgvBarang.TabIndex = 0
         '
         'KodeBarang
@@ -233,8 +241,9 @@ Partial Class FrmUtamaKasir
         Me.pnlFilterBarang.Controls.Add(Me.lblCariBarang)
         Me.pnlFilterBarang.Dock = System.Windows.Forms.DockStyle.Top
         Me.pnlFilterBarang.Location = New System.Drawing.Point(0, 0)
+        Me.pnlFilterBarang.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.pnlFilterBarang.Name = "pnlFilterBarang"
-        Me.pnlFilterBarang.Size = New System.Drawing.Size(650, 120)
+        Me.pnlFilterBarang.Size = New System.Drawing.Size(433, 77)
         Me.pnlFilterBarang.TabIndex = 1
         '
         'cmbKategori
@@ -242,36 +251,40 @@ Partial Class FrmUtamaKasir
         Me.cmbKategori.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbKategori.Font = New System.Drawing.Font("Segoe UI", 10.125!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbKategori.FormattingEnabled = True
-        Me.cmbKategori.Location = New System.Drawing.Point(186, 61)
+        Me.cmbKategori.Location = New System.Drawing.Point(124, 39)
+        Me.cmbKategori.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.cmbKategori.Name = "cmbKategori"
-        Me.cmbKategori.Size = New System.Drawing.Size(461, 45)
+        Me.cmbKategori.Size = New System.Drawing.Size(309, 31)
         Me.cmbKategori.TabIndex = 3
         '
         'lblKategori
         '
         Me.lblKategori.AutoSize = True
         Me.lblKategori.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.lblKategori.Location = New System.Drawing.Point(54, 68)
+        Me.lblKategori.Location = New System.Drawing.Point(36, 44)
+        Me.lblKategori.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblKategori.Name = "lblKategori"
-        Me.lblKategori.Size = New System.Drawing.Size(103, 32)
+        Me.lblKategori.Size = New System.Drawing.Size(66, 20)
         Me.lblKategori.TabIndex = 2
         Me.lblKategori.Text = "Kategori"
         '
         'txtCariBarang
         '
         Me.txtCariBarang.Font = New System.Drawing.Font("Segoe UI", 10.0!)
-        Me.txtCariBarang.Location = New System.Drawing.Point(186, 9)
+        Me.txtCariBarang.Location = New System.Drawing.Point(124, 6)
+        Me.txtCariBarang.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txtCariBarang.Name = "txtCariBarang"
-        Me.txtCariBarang.Size = New System.Drawing.Size(461, 43)
+        Me.txtCariBarang.Size = New System.Drawing.Size(309, 30)
         Me.txtCariBarang.TabIndex = 1
         '
         'lblCariBarang
         '
         Me.lblCariBarang.AutoSize = True
         Me.lblCariBarang.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblCariBarang.Location = New System.Drawing.Point(24, 16)
+        Me.lblCariBarang.Location = New System.Drawing.Point(16, 10)
+        Me.lblCariBarang.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblCariBarang.Name = "lblCariBarang"
-        Me.lblCariBarang.Size = New System.Drawing.Size(147, 32)
+        Me.lblCariBarang.Size = New System.Drawing.Size(90, 20)
         Me.lblCariBarang.TabIndex = 0
         Me.lblCariBarang.Text = "Cari Barang"
         '
@@ -286,7 +299,8 @@ Partial Class FrmUtamaKasir
         Me.dgvKeranjang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvKeranjang.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.KeranjangKodeBarang, Me.KeranjangNamaBarang, Me.KeranjangJumlah, Me.KeranjangHarga, Me.KeranjangSubtotal, Me.KeranjangHapus})
         Me.dgvKeranjang.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.dgvKeranjang.Location = New System.Drawing.Point(0, 120)
+        Me.dgvKeranjang.Location = New System.Drawing.Point(0, 77)
+        Me.dgvKeranjang.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.dgvKeranjang.MultiSelect = False
         Me.dgvKeranjang.Name = "dgvKeranjang"
         Me.dgvKeranjang.ReadOnly = True
@@ -294,7 +308,7 @@ Partial Class FrmUtamaKasir
         Me.dgvKeranjang.RowHeadersWidth = 82
         Me.dgvKeranjang.RowTemplate.Height = 33
         Me.dgvKeranjang.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvKeranjang.Size = New System.Drawing.Size(1099, 304)
+        Me.dgvKeranjang.Size = New System.Drawing.Size(733, 194)
         Me.dgvKeranjang.TabIndex = 1
         '
         'KeranjangKodeBarang
@@ -357,10 +371,48 @@ Partial Class FrmUtamaKasir
         Me.pnlPembayaran.Controls.Add(Me.lblUangBayar)
         Me.pnlPembayaran.Controls.Add(Me.lblTotalBelanja)
         Me.pnlPembayaran.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.pnlPembayaran.Location = New System.Drawing.Point(0, 424)
+        Me.pnlPembayaran.Location = New System.Drawing.Point(0, 271)
+        Me.pnlPembayaran.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.pnlPembayaran.Name = "pnlPembayaran"
-        Me.pnlPembayaran.Size = New System.Drawing.Size(1099, 263)
+        Me.pnlPembayaran.Size = New System.Drawing.Size(733, 169)
         Me.pnlPembayaran.TabIndex = 2
+        '
+        'cmbMetodePembayaran
+        '
+        Me.cmbMetodePembayaran.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.cmbMetodePembayaran.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbMetodePembayaran.FormattingEnabled = True
+        Me.cmbMetodePembayaran.Items.AddRange(New Object() {"Tunai", "Qris"})
+        Me.cmbMetodePembayaran.Location = New System.Drawing.Point(591, 31)
+        Me.cmbMetodePembayaran.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.cmbMetodePembayaran.Name = "cmbMetodePembayaran"
+        Me.cmbMetodePembayaran.Size = New System.Drawing.Size(121, 24)
+        Me.cmbMetodePembayaran.TabIndex = 8
+        '
+        'lblMetodePembayaran
+        '
+        Me.lblMetodePembayaran.AutoSize = True
+        Me.lblMetodePembayaran.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.lblMetodePembayaran.Location = New System.Drawing.Point(14, 32)
+        Me.lblMetodePembayaran.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblMetodePembayaran.Name = "lblMetodePembayaran"
+        Me.lblMetodePembayaran.Size = New System.Drawing.Size(179, 20)
+        Me.lblMetodePembayaran.TabIndex = 7
+        Me.lblMetodePembayaran.Text = "" & Global.Microsoft.VisualBasic.ChrW(9) & "Metode Pembayaran"
+        '
+        'btnBayar
+        '
+        Me.btnBayar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnBayar.BackColor = System.Drawing.Color.Green
+        Me.btnBayar.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.875!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBayar.ForeColor = System.Drawing.Color.White
+        Me.btnBayar.Location = New System.Drawing.Point(591, 124)
+        Me.btnBayar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnBayar.Name = "btnBayar"
+        Me.btnBayar.Size = New System.Drawing.Size(120, 36)
+        Me.btnBayar.TabIndex = 6
+        Me.btnBayar.Text = "BAYAR"
+        Me.btnBayar.UseVisualStyleBackColor = False
         '
         'lblNominalKembalian
         '
@@ -368,9 +420,10 @@ Partial Class FrmUtamaKasir
         Me.lblNominalKembalian.AutoSize = True
         Me.lblNominalKembalian.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.125!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblNominalKembalian.ForeColor = System.Drawing.Color.ForestGreen
-        Me.lblNominalKembalian.Location = New System.Drawing.Point(881, 154)
+        Me.lblNominalKembalian.Location = New System.Drawing.Point(587, 99)
+        Me.lblNominalKembalian.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblNominalKembalian.Name = "lblNominalKembalian"
-        Me.lblNominalKembalian.Size = New System.Drawing.Size(67, 31)
+        Me.lblNominalKembalian.Size = New System.Drawing.Size(42, 20)
         Me.lblNominalKembalian.TabIndex = 5
         Me.lblNominalKembalian.Text = "" & Global.Microsoft.VisualBasic.ChrW(9) & "Rp0"
         '
@@ -379,9 +432,10 @@ Partial Class FrmUtamaKasir
         Me.txtUangBayar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtUangBayar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtUangBayar.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.125!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtUangBayar.Location = New System.Drawing.Point(887, 102)
+        Me.txtUangBayar.Location = New System.Drawing.Point(591, 65)
+        Me.txtUangBayar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txtUangBayar.Name = "txtUangBayar"
-        Me.txtUangBayar.Size = New System.Drawing.Size(180, 38)
+        Me.txtUangBayar.Size = New System.Drawing.Size(121, 27)
         Me.txtUangBayar.TabIndex = 4
         Me.txtUangBayar.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -391,9 +445,10 @@ Partial Class FrmUtamaKasir
         Me.lblNominalTotalBelanja.AutoSize = True
         Me.lblNominalTotalBelanja.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.125!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblNominalTotalBelanja.ForeColor = System.Drawing.Color.ForestGreen
-        Me.lblNominalTotalBelanja.Location = New System.Drawing.Point(881, 2)
+        Me.lblNominalTotalBelanja.Location = New System.Drawing.Point(587, 1)
+        Me.lblNominalTotalBelanja.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblNominalTotalBelanja.Name = "lblNominalTotalBelanja"
-        Me.lblNominalTotalBelanja.Size = New System.Drawing.Size(67, 31)
+        Me.lblNominalTotalBelanja.Size = New System.Drawing.Size(42, 20)
         Me.lblNominalTotalBelanja.TabIndex = 3
         Me.lblNominalTotalBelanja.Tag = "" & Global.Microsoft.VisualBasic.ChrW(9)
         Me.lblNominalTotalBelanja.Text = "" & Global.Microsoft.VisualBasic.ChrW(9) & "Rp0"
@@ -403,9 +458,10 @@ Partial Class FrmUtamaKasir
         Me.lblKembalian.AutoSize = True
         Me.lblKembalian.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.125!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblKembalian.ForeColor = System.Drawing.Color.Black
-        Me.lblKembalian.Location = New System.Drawing.Point(21, 154)
+        Me.lblKembalian.Location = New System.Drawing.Point(14, 99)
+        Me.lblKembalian.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblKembalian.Name = "lblKembalian"
-        Me.lblKembalian.Size = New System.Drawing.Size(150, 31)
+        Me.lblKembalian.Size = New System.Drawing.Size(96, 20)
         Me.lblKembalian.TabIndex = 2
         Me.lblKembalian.Text = "Kembalian"
         '
@@ -414,9 +470,10 @@ Partial Class FrmUtamaKasir
         Me.lblUangBayar.AutoSize = True
         Me.lblUangBayar.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.125!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblUangBayar.ForeColor = System.Drawing.Color.Black
-        Me.lblUangBayar.Location = New System.Drawing.Point(21, 109)
+        Me.lblUangBayar.Location = New System.Drawing.Point(14, 70)
+        Me.lblUangBayar.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblUangBayar.Name = "lblUangBayar"
-        Me.lblUangBayar.Size = New System.Drawing.Size(167, 31)
+        Me.lblUangBayar.Size = New System.Drawing.Size(107, 20)
         Me.lblUangBayar.TabIndex = 1
         Me.lblUangBayar.Text = "Uang Bayar"
         '
@@ -425,9 +482,10 @@ Partial Class FrmUtamaKasir
         Me.lblTotalBelanja.AutoSize = True
         Me.lblTotalBelanja.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.125!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTotalBelanja.ForeColor = System.Drawing.Color.Black
-        Me.lblTotalBelanja.Location = New System.Drawing.Point(21, 2)
+        Me.lblTotalBelanja.Location = New System.Drawing.Point(14, 1)
+        Me.lblTotalBelanja.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblTotalBelanja.Name = "lblTotalBelanja"
-        Me.lblTotalBelanja.Size = New System.Drawing.Size(185, 31)
+        Me.lblTotalBelanja.Size = New System.Drawing.Size(120, 20)
         Me.lblTotalBelanja.TabIndex = 0
         Me.lblTotalBelanja.Text = "Total Belanja"
         '
@@ -437,8 +495,9 @@ Partial Class FrmUtamaKasir
         Me.pnlHeaderKeranjang.Controls.Add(Me.lblHeaderKeranjang)
         Me.pnlHeaderKeranjang.Dock = System.Windows.Forms.DockStyle.Top
         Me.pnlHeaderKeranjang.Location = New System.Drawing.Point(0, 0)
+        Me.pnlHeaderKeranjang.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.pnlHeaderKeranjang.Name = "pnlHeaderKeranjang"
-        Me.pnlHeaderKeranjang.Size = New System.Drawing.Size(1099, 120)
+        Me.pnlHeaderKeranjang.Size = New System.Drawing.Size(733, 77)
         Me.pnlHeaderKeranjang.TabIndex = 0
         '
         'lblHeaderKeranjang
@@ -447,9 +506,10 @@ Partial Class FrmUtamaKasir
         Me.lblHeaderKeranjang.BackColor = System.Drawing.Color.Transparent
         Me.lblHeaderKeranjang.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblHeaderKeranjang.ForeColor = System.Drawing.Color.White
-        Me.lblHeaderKeranjang.Location = New System.Drawing.Point(20, 22)
+        Me.lblHeaderKeranjang.Location = New System.Drawing.Point(13, 14)
+        Me.lblHeaderKeranjang.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblHeaderKeranjang.Name = "lblHeaderKeranjang"
-        Me.lblHeaderKeranjang.Size = New System.Drawing.Size(359, 45)
+        Me.lblHeaderKeranjang.Size = New System.Drawing.Size(223, 28)
         Me.lblHeaderKeranjang.TabIndex = 1
         Me.lblHeaderKeranjang.Text = "KERANJANG BELANJA"
         '
@@ -466,48 +526,16 @@ Partial Class FrmUtamaKasir
         Me.TableLayoutPanel1.Size = New System.Drawing.Size(200, 100)
         Me.TableLayoutPanel1.TabIndex = 6
         '
-        'btnBayar
-        '
-        Me.btnBayar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnBayar.BackColor = System.Drawing.Color.Green
-        Me.btnBayar.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.875!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnBayar.ForeColor = System.Drawing.Color.White
-        Me.btnBayar.Location = New System.Drawing.Point(887, 193)
-        Me.btnBayar.Name = "btnBayar"
-        Me.btnBayar.Size = New System.Drawing.Size(180, 57)
-        Me.btnBayar.TabIndex = 6
-        Me.btnBayar.Text = "BAYAR"
-        Me.btnBayar.UseVisualStyleBackColor = False
-        '
-        'lblMetodePembayaran
-        '
-        Me.lblMetodePembayaran.AutoSize = True
-        Me.lblMetodePembayaran.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold)
-        Me.lblMetodePembayaran.Location = New System.Drawing.Point(21, 50)
-        Me.lblMetodePembayaran.Name = "lblMetodePembayaran"
-        Me.lblMetodePembayaran.Size = New System.Drawing.Size(281, 31)
-        Me.lblMetodePembayaran.TabIndex = 7
-        Me.lblMetodePembayaran.Text = "" & Global.Microsoft.VisualBasic.ChrW(9) & "Metode Pembayaran"
-        '
-        'cmbMetodePembayaran
-        '
-        Me.cmbMetodePembayaran.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.cmbMetodePembayaran.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cmbMetodePembayaran.FormattingEnabled = True
-        Me.cmbMetodePembayaran.Items.AddRange(New Object() {"Tunai", "Qris"})
-        Me.cmbMetodePembayaran.Location = New System.Drawing.Point(887, 48)
-        Me.cmbMetodePembayaran.Name = "cmbMetodePembayaran"
-        Me.cmbMetodePembayaran.Size = New System.Drawing.Size(180, 33)
-        Me.cmbMetodePembayaran.TabIndex = 8
-        '
         'FrmUtamaKasir
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1753, 792)
+        Me.ClientSize = New System.Drawing.Size(1169, 507)
         Me.Controls.Add(Me.splitUtama)
         Me.Controls.Add(Me.pnlHeader)
-        Me.MinimumSize = New System.Drawing.Size(1000, 650)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.MinimumSize = New System.Drawing.Size(673, 433)
         Me.Name = "FrmUtamaKasir"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Toko Pertanian - Kasir"

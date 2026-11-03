@@ -214,6 +214,9 @@
     <EmbeddedResource Include="FrmRiwayatPenjualan.resx">
       <DependentUpon>FrmRiwayatPenjualan.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmUtamaKasir.resx">
+      <DependentUpon>FrmUtamaKasir.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmUtamaOwner.resx">
       <DependentUpon>FrmUtamaOwner.vb</DependentUpon>
     </EmbeddedResource>
