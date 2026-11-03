@@ -217,7 +217,7 @@ Partial Class FrmUtamaOwner
         Me.lblJudul.Font = New System.Drawing.Font("Segoe UI", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblJudul.Location = New System.Drawing.Point(0, 0)
         Me.lblJudul.Name = "lblJudul"
-        Me.lblJudul.Size = New System.Drawing.Size(149, 37)
+        Me.lblJudul.Size = New System.Drawing.Size(174, 45)
         Me.lblJudul.TabIndex = 0
         Me.lblJudul.Text = "Ringkasan"
         Me.lblJudul.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -262,9 +262,9 @@ Partial Class FrmUtamaOwner
         Me.lblOmzet.Dock = System.Windows.Forms.DockStyle.Fill
         Me.lblOmzet.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblOmzet.ForeColor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(94, Byte), Integer), CType(CType(58, Byte), Integer))
-        Me.lblOmzet.Location = New System.Drawing.Point(14, 33)
+        Me.lblOmzet.Location = New System.Drawing.Point(14, 38)
         Me.lblOmzet.Name = "lblOmzet"
-        Me.lblOmzet.Size = New System.Drawing.Size(175, 41)
+        Me.lblOmzet.Size = New System.Drawing.Size(212, 48)
         Me.lblOmzet.TabIndex = 0
         Me.lblOmzet.Text = "Rp 380.000"
         Me.lblOmzet.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -276,7 +276,7 @@ Partial Class FrmUtamaOwner
         Me.lblJudulOmzet.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(55, Byte), Integer))
         Me.lblJudulOmzet.Location = New System.Drawing.Point(14, 10)
         Me.lblJudulOmzet.Name = "lblJudulOmzet"
-        Me.lblJudulOmzet.Size = New System.Drawing.Size(61, 23)
+        Me.lblJudulOmzet.Size = New System.Drawing.Size(70, 28)
         Me.lblJudulOmzet.TabIndex = 1
         Me.lblJudulOmzet.Text = "Omzet"
         '
@@ -299,9 +299,9 @@ Partial Class FrmUtamaOwner
         Me.lblModal.Dock = System.Windows.Forms.DockStyle.Fill
         Me.lblModal.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblModal.ForeColor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(94, Byte), Integer), CType(CType(58, Byte), Integer))
-        Me.lblModal.Location = New System.Drawing.Point(14, 33)
+        Me.lblModal.Location = New System.Drawing.Point(14, 38)
         Me.lblModal.Name = "lblModal"
-        Me.lblModal.Size = New System.Drawing.Size(175, 41)
+        Me.lblModal.Size = New System.Drawing.Size(212, 48)
         Me.lblModal.TabIndex = 0
         Me.lblModal.Text = "Rp 338.000"
         Me.lblModal.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -313,7 +313,7 @@ Partial Class FrmUtamaOwner
         Me.lblJudulModal.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(55, Byte), Integer))
         Me.lblJudulModal.Location = New System.Drawing.Point(14, 10)
         Me.lblJudulModal.Name = "lblJudulModal"
-        Me.lblJudulModal.Size = New System.Drawing.Size(211, 23)
+        Me.lblJudulModal.Size = New System.Drawing.Size(242, 28)
         Me.lblJudulModal.TabIndex = 1
         Me.lblJudulModal.Text = "Total modal barang terjual"
         '
@@ -336,9 +336,9 @@ Partial Class FrmUtamaOwner
         Me.lblLaba.Dock = System.Windows.Forms.DockStyle.Fill
         Me.lblLaba.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblLaba.ForeColor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(94, Byte), Integer), CType(CType(58, Byte), Integer))
-        Me.lblLaba.Location = New System.Drawing.Point(14, 33)
+        Me.lblLaba.Location = New System.Drawing.Point(14, 38)
         Me.lblLaba.Name = "lblLaba"
-        Me.lblLaba.Size = New System.Drawing.Size(158, 41)
+        Me.lblLaba.Size = New System.Drawing.Size(191, 48)
         Me.lblLaba.TabIndex = 1
         Me.lblLaba.Text = "Rp 42.000"
         Me.lblLaba.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -350,7 +350,7 @@ Partial Class FrmUtamaOwner
         Me.lblJudulLaba.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(55, Byte), Integer))
         Me.lblJudulLaba.Location = New System.Drawing.Point(14, 10)
         Me.lblJudulLaba.Name = "lblJudulLaba"
-        Me.lblJudulLaba.Size = New System.Drawing.Size(93, 23)
+        Me.lblJudulLaba.Size = New System.Drawing.Size(108, 28)
         Me.lblJudulLaba.TabIndex = 0
         Me.lblJudulLaba.Text = "Laba Kotor"
         '
@@ -373,9 +373,9 @@ Partial Class FrmUtamaOwner
         Me.lblTransaksi.Dock = System.Windows.Forms.DockStyle.Fill
         Me.lblTransaksi.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTransaksi.ForeColor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(94, Byte), Integer), CType(CType(58, Byte), Integer))
-        Me.lblTransaksi.Location = New System.Drawing.Point(14, 33)
+        Me.lblTransaksi.Location = New System.Drawing.Point(14, 38)
         Me.lblTransaksi.Name = "lblTransaksi"
-        Me.lblTransaksi.Size = New System.Drawing.Size(35, 41)
+        Me.lblTransaksi.Size = New System.Drawing.Size(41, 48)
         Me.lblTransaksi.TabIndex = 1
         Me.lblTransaksi.Text = "2"
         Me.lblTransaksi.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -387,7 +387,7 @@ Partial Class FrmUtamaOwner
         Me.lblJudulTransaksi.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(55, Byte), Integer))
         Me.lblJudulTransaksi.Location = New System.Drawing.Point(14, 10)
         Me.lblJudulTransaksi.Name = "lblJudulTransaksi"
-        Me.lblJudulTransaksi.Size = New System.Drawing.Size(137, 23)
+        Me.lblJudulTransaksi.Size = New System.Drawing.Size(155, 28)
         Me.lblJudulTransaksi.TabIndex = 0
         Me.lblJudulTransaksi.Text = "Jumlah Transaksi"
         '
@@ -427,11 +427,11 @@ Partial Class FrmUtamaOwner
         '
         Me.dgvRecapHarian.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvRecapHarian.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.dgvRecapHarian.Location = New System.Drawing.Point(8, 31)
+        Me.dgvRecapHarian.Location = New System.Drawing.Point(8, 36)
         Me.dgvRecapHarian.Name = "dgvRecapHarian"
         Me.dgvRecapHarian.RowHeadersWidth = 62
         Me.dgvRecapHarian.RowTemplate.Height = 28
-        Me.dgvRecapHarian.Size = New System.Drawing.Size(813, 682)
+        Me.dgvRecapHarian.Size = New System.Drawing.Size(813, 677)
         Me.dgvRecapHarian.TabIndex = 0
         '
         'gbStok
@@ -453,11 +453,11 @@ Partial Class FrmUtamaOwner
         '
         Me.dgvStokMenipis.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvStokMenipis.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.dgvStokMenipis.Location = New System.Drawing.Point(8, 31)
+        Me.dgvStokMenipis.Location = New System.Drawing.Point(8, 36)
         Me.dgvStokMenipis.Name = "dgvStokMenipis"
         Me.dgvStokMenipis.RowHeadersWidth = 62
         Me.dgvStokMenipis.RowTemplate.Height = 28
-        Me.dgvStokMenipis.Size = New System.Drawing.Size(546, 682)
+        Me.dgvStokMenipis.Size = New System.Drawing.Size(546, 677)
         Me.dgvStokMenipis.TabIndex = 0
         '
         'pnlTombol
@@ -509,7 +509,7 @@ Partial Class FrmUtamaOwner
         '
         'FrmUtamaOwner
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 23.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(11.0!, 28.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(243, Byte), Integer), CType(CType(244, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1643, 997)

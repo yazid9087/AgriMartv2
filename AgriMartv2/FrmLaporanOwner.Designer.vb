@@ -22,11 +22,11 @@ Partial Class FrmLaporanOwner
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle15 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmLaporanOwner))
         Me.pnlSidebar = New System.Windows.Forms.Panel()
         Me.btnLogout = New System.Windows.Forms.Button()
@@ -216,19 +216,19 @@ Partial Class FrmLaporanOwner
         Me.tabLaporan.Controls.Add(Me.tpMetode)
         Me.tabLaporan.Controls.Add(Me.tpPersediaan)
         Me.tabLaporan.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.tabLaporan.Location = New System.Drawing.Point(20, 99)
+        Me.tabLaporan.Location = New System.Drawing.Point(20, 107)
         Me.tabLaporan.Name = "tabLaporan"
         Me.tabLaporan.SelectedIndex = 0
-        Me.tabLaporan.Size = New System.Drawing.Size(1104, 532)
+        Me.tabLaporan.Size = New System.Drawing.Size(1104, 519)
         Me.tabLaporan.TabIndex = 3
         '
         'tpPenjualan
         '
         Me.tpPenjualan.Controls.Add(Me.dgvPenjualan)
-        Me.tpPenjualan.Location = New System.Drawing.Point(4, 32)
+        Me.tpPenjualan.Location = New System.Drawing.Point(4, 37)
         Me.tpPenjualan.Name = "tpPenjualan"
         Me.tpPenjualan.Padding = New System.Windows.Forms.Padding(3)
-        Me.tpPenjualan.Size = New System.Drawing.Size(1096, 496)
+        Me.tpPenjualan.Size = New System.Drawing.Size(1096, 478)
         Me.tpPenjualan.TabIndex = 0
         Me.tpPenjualan.Text = "Penjualan"
         Me.tpPenjualan.UseVisualStyleBackColor = True
@@ -240,14 +240,14 @@ Partial Class FrmLaporanOwner
         Me.dgvPenjualan.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgvPenjualan.BackgroundColor = System.Drawing.Color.White
         Me.dgvPenjualan.BorderStyle = System.Windows.Forms.BorderStyle.None
-        DataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(94, Byte), Integer), CType(CType(58, Byte), Integer))
-        DataGridViewCellStyle11.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle11.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvPenjualan.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle11
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(94, Byte), Integer), CType(CType(58, Byte), Integer))
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvPenjualan.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.dgvPenjualan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvPenjualan.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.clmNoNota, Me.clmTanggal, Me.clmKasir, Me.clmMetode, Me.clmTotal})
         Me.dgvPenjualan.Dock = System.Windows.Forms.DockStyle.Fill
@@ -259,7 +259,7 @@ Partial Class FrmLaporanOwner
         Me.dgvPenjualan.RowHeadersWidth = 62
         Me.dgvPenjualan.RowTemplate.Height = 28
         Me.dgvPenjualan.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvPenjualan.Size = New System.Drawing.Size(1090, 490)
+        Me.dgvPenjualan.Size = New System.Drawing.Size(1090, 472)
         Me.dgvPenjualan.TabIndex = 0
         '
         'clmNoNota
@@ -300,10 +300,10 @@ Partial Class FrmLaporanOwner
         'tpLaba
         '
         Me.tpLaba.Controls.Add(Me.dgvLaba)
-        Me.tpLaba.Location = New System.Drawing.Point(4, 32)
+        Me.tpLaba.Location = New System.Drawing.Point(4, 37)
         Me.tpLaba.Name = "tpLaba"
         Me.tpLaba.Padding = New System.Windows.Forms.Padding(3)
-        Me.tpLaba.Size = New System.Drawing.Size(1096, 496)
+        Me.tpLaba.Size = New System.Drawing.Size(1096, 478)
         Me.tpLaba.TabIndex = 1
         Me.tpLaba.Text = "Laba Kotor"
         Me.tpLaba.UseVisualStyleBackColor = True
@@ -315,14 +315,14 @@ Partial Class FrmLaporanOwner
         Me.dgvLaba.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgvLaba.BackgroundColor = System.Drawing.Color.White
         Me.dgvLaba.BorderStyle = System.Windows.Forms.BorderStyle.None
-        DataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(94, Byte), Integer), CType(CType(58, Byte), Integer))
-        DataGridViewCellStyle12.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle12.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvLaba.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle12
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(94, Byte), Integer), CType(CType(58, Byte), Integer))
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvLaba.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.dgvLaba.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvLaba.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.clmOmzet, Me.clmTotalModal, Me.clmLabaKotor})
         Me.dgvLaba.Dock = System.Windows.Forms.DockStyle.Fill
@@ -334,7 +334,7 @@ Partial Class FrmLaporanOwner
         Me.dgvLaba.RowHeadersWidth = 62
         Me.dgvLaba.RowTemplate.Height = 28
         Me.dgvLaba.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvLaba.Size = New System.Drawing.Size(1090, 490)
+        Me.dgvLaba.Size = New System.Drawing.Size(1090, 472)
         Me.dgvLaba.TabIndex = 1
         '
         'DataGridViewTextBoxColumn1
@@ -375,10 +375,10 @@ Partial Class FrmLaporanOwner
         'tpPerBarang
         '
         Me.tpPerBarang.Controls.Add(Me.dgvPerBarang)
-        Me.tpPerBarang.Location = New System.Drawing.Point(4, 32)
+        Me.tpPerBarang.Location = New System.Drawing.Point(4, 37)
         Me.tpPerBarang.Name = "tpPerBarang"
         Me.tpPerBarang.Padding = New System.Windows.Forms.Padding(3)
-        Me.tpPerBarang.Size = New System.Drawing.Size(1096, 496)
+        Me.tpPerBarang.Size = New System.Drawing.Size(1096, 478)
         Me.tpPerBarang.TabIndex = 2
         Me.tpPerBarang.Text = "Penjualan per Barang"
         Me.tpPerBarang.UseVisualStyleBackColor = True
@@ -390,14 +390,14 @@ Partial Class FrmLaporanOwner
         Me.dgvPerBarang.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgvPerBarang.BackgroundColor = System.Drawing.Color.White
         Me.dgvPerBarang.BorderStyle = System.Windows.Forms.BorderStyle.None
-        DataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(94, Byte), Integer), CType(CType(58, Byte), Integer))
-        DataGridViewCellStyle13.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle13.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvPerBarang.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle13
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(94, Byte), Integer), CType(CType(58, Byte), Integer))
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvPerBarang.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle3
         Me.dgvPerBarang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvPerBarang.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.clmKode, Me.clmNamaBarang, Me.clmJumlahTerjual, Me.clmOmzet2, Me.clmLabaKotor2})
         Me.dgvPerBarang.Dock = System.Windows.Forms.DockStyle.Fill
@@ -409,7 +409,7 @@ Partial Class FrmLaporanOwner
         Me.dgvPerBarang.RowHeadersWidth = 62
         Me.dgvPerBarang.RowTemplate.Height = 28
         Me.dgvPerBarang.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvPerBarang.Size = New System.Drawing.Size(1090, 490)
+        Me.dgvPerBarang.Size = New System.Drawing.Size(1090, 472)
         Me.dgvPerBarang.TabIndex = 2
         '
         'clmKode
@@ -450,10 +450,10 @@ Partial Class FrmLaporanOwner
         'tpMetode
         '
         Me.tpMetode.Controls.Add(Me.dvgMetode)
-        Me.tpMetode.Location = New System.Drawing.Point(4, 32)
+        Me.tpMetode.Location = New System.Drawing.Point(4, 37)
         Me.tpMetode.Name = "tpMetode"
         Me.tpMetode.Padding = New System.Windows.Forms.Padding(3)
-        Me.tpMetode.Size = New System.Drawing.Size(1096, 496)
+        Me.tpMetode.Size = New System.Drawing.Size(1096, 478)
         Me.tpMetode.TabIndex = 3
         Me.tpMetode.Text = "Rekap Metode Pembayaran"
         Me.tpMetode.UseVisualStyleBackColor = True
@@ -465,14 +465,14 @@ Partial Class FrmLaporanOwner
         Me.dvgMetode.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dvgMetode.BackgroundColor = System.Drawing.Color.White
         Me.dvgMetode.BorderStyle = System.Windows.Forms.BorderStyle.None
-        DataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(94, Byte), Integer), CType(CType(58, Byte), Integer))
-        DataGridViewCellStyle14.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle14.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dvgMetode.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle14
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(94, Byte), Integer), CType(CType(58, Byte), Integer))
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle4.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dvgMetode.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle4
         Me.dvgMetode.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dvgMetode.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.clmMetodePembayaran, Me.clmJumlahTransaksi, Me.clmTotalPenjualan})
         Me.dvgMetode.Dock = System.Windows.Forms.DockStyle.Fill
@@ -484,7 +484,7 @@ Partial Class FrmLaporanOwner
         Me.dvgMetode.RowHeadersWidth = 62
         Me.dvgMetode.RowTemplate.Height = 28
         Me.dvgMetode.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dvgMetode.Size = New System.Drawing.Size(1090, 490)
+        Me.dvgMetode.Size = New System.Drawing.Size(1090, 472)
         Me.dvgMetode.TabIndex = 3
         '
         'clmMetodePembayaran
@@ -511,10 +511,10 @@ Partial Class FrmLaporanOwner
         'tpPersediaan
         '
         Me.tpPersediaan.Controls.Add(Me.dgvPersediaan)
-        Me.tpPersediaan.Location = New System.Drawing.Point(4, 32)
+        Me.tpPersediaan.Location = New System.Drawing.Point(4, 37)
         Me.tpPersediaan.Name = "tpPersediaan"
         Me.tpPersediaan.Padding = New System.Windows.Forms.Padding(3)
-        Me.tpPersediaan.Size = New System.Drawing.Size(1096, 496)
+        Me.tpPersediaan.Size = New System.Drawing.Size(1096, 478)
         Me.tpPersediaan.TabIndex = 4
         Me.tpPersediaan.Text = "Persediaan"
         Me.tpPersediaan.UseVisualStyleBackColor = True
@@ -526,14 +526,14 @@ Partial Class FrmLaporanOwner
         Me.dgvPersediaan.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgvPersediaan.BackgroundColor = System.Drawing.Color.White
         Me.dgvPersediaan.BorderStyle = System.Windows.Forms.BorderStyle.None
-        DataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle15.BackColor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(94, Byte), Integer), CType(CType(58, Byte), Integer))
-        DataGridViewCellStyle15.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle15.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle15.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvPersediaan.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle15
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(94, Byte), Integer), CType(CType(58, Byte), Integer))
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvPersediaan.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
         Me.dgvPersediaan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvPersediaan.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.clmKategori, Me.clmSatuan, Me.clmHargaBeli, Me.clmHargaJual, Me.clmStok})
         Me.dgvPersediaan.Dock = System.Windows.Forms.DockStyle.Fill
@@ -545,7 +545,7 @@ Partial Class FrmLaporanOwner
         Me.dgvPersediaan.RowHeadersWidth = 62
         Me.dgvPersediaan.RowTemplate.Height = 28
         Me.dgvPersediaan.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvPersediaan.Size = New System.Drawing.Size(1090, 490)
+        Me.dgvPersediaan.Size = New System.Drawing.Size(1090, 472)
         Me.dgvPersediaan.TabIndex = 3
         '
         'DataGridViewTextBoxColumn3
@@ -603,9 +603,9 @@ Partial Class FrmLaporanOwner
         Me.lblRingkasan.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.lblRingkasan.Font = New System.Drawing.Font("Segoe UI", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblRingkasan.ForeColor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(94, Byte), Integer), CType(CType(58, Byte), Integer))
-        Me.lblRingkasan.Location = New System.Drawing.Point(20, 631)
+        Me.lblRingkasan.Location = New System.Drawing.Point(20, 626)
         Me.lblRingkasan.Name = "lblRingkasan"
-        Me.lblRingkasan.Size = New System.Drawing.Size(370, 25)
+        Me.lblRingkasan.Size = New System.Drawing.Size(425, 30)
         Me.lblRingkasan.TabIndex = 2
         Me.lblRingkasan.Text = "Jumlah Nota: 2 | Total Penjulan: Rp 340.000"
         Me.lblRingkasan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -619,7 +619,7 @@ Partial Class FrmLaporanOwner
         Me.pnlFilter.Controls.Add(Me.dtpAwal)
         Me.pnlFilter.Controls.Add(Me.lblDari)
         Me.pnlFilter.Dock = System.Windows.Forms.DockStyle.Top
-        Me.pnlFilter.Location = New System.Drawing.Point(20, 47)
+        Me.pnlFilter.Location = New System.Drawing.Point(20, 55)
         Me.pnlFilter.Name = "pnlFilter"
         Me.pnlFilter.Size = New System.Drawing.Size(1104, 52)
         Me.pnlFilter.TabIndex = 1
@@ -652,7 +652,7 @@ Partial Class FrmLaporanOwner
         Me.dtpAkhir.Format = System.Windows.Forms.DateTimePickerFormat.Custom
         Me.dtpAkhir.Location = New System.Drawing.Point(260, 10)
         Me.dtpAkhir.Name = "dtpAkhir"
-        Me.dtpAkhir.Size = New System.Drawing.Size(120, 30)
+        Me.dtpAkhir.Size = New System.Drawing.Size(120, 34)
         Me.dtpAkhir.TabIndex = 3
         '
         'lblSampai
@@ -660,7 +660,7 @@ Partial Class FrmLaporanOwner
         Me.lblSampai.AutoSize = True
         Me.lblSampai.Location = New System.Drawing.Point(190, 14)
         Me.lblSampai.Name = "lblSampai"
-        Me.lblSampai.Size = New System.Drawing.Size(66, 23)
+        Me.lblSampai.Size = New System.Drawing.Size(77, 28)
         Me.lblSampai.TabIndex = 2
         Me.lblSampai.Text = "Sampai"
         '
@@ -669,7 +669,7 @@ Partial Class FrmLaporanOwner
         Me.dtpAwal.Format = System.Windows.Forms.DateTimePickerFormat.Custom
         Me.dtpAwal.Location = New System.Drawing.Point(50, 10)
         Me.dtpAwal.Name = "dtpAwal"
-        Me.dtpAwal.Size = New System.Drawing.Size(120, 30)
+        Me.dtpAwal.Size = New System.Drawing.Size(120, 34)
         Me.dtpAwal.TabIndex = 1
         '
         'lblDari
@@ -677,7 +677,7 @@ Partial Class FrmLaporanOwner
         Me.lblDari.AutoSize = True
         Me.lblDari.Location = New System.Drawing.Point(0, 14)
         Me.lblDari.Name = "lblDari"
-        Me.lblDari.Size = New System.Drawing.Size(41, 23)
+        Me.lblDari.Size = New System.Drawing.Size(48, 28)
         Me.lblDari.TabIndex = 0
         Me.lblDari.Text = "Dari"
         '
@@ -688,7 +688,7 @@ Partial Class FrmLaporanOwner
         Me.lblJudul.Font = New System.Drawing.Font("Segoe UI", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblJudul.Location = New System.Drawing.Point(20, 10)
         Me.lblJudul.Name = "lblJudul"
-        Me.lblJudul.Size = New System.Drawing.Size(377, 37)
+        Me.lblJudul.Size = New System.Drawing.Size(440, 45)
         Me.lblJudul.TabIndex = 0
         Me.lblJudul.Text = "Laporan Penjualan dan Laba"
         Me.lblJudul.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -716,7 +716,7 @@ Partial Class FrmLaporanOwner
         '
         'FrmLaporanOwner
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 23.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(11.0!, 28.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(243, Byte), Integer), CType(CType(244, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1344, 712)
