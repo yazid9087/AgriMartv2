@@ -79,6 +79,18 @@
     <Compile Include="Dashboard.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FrmPembayaran.Designer.vb">
+      <DependentUpon>FrmPembayaran.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPembayaran.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRiwayatPenjualan.Designer.vb">
+      <DependentUpon>FrmRiwayatPenjualan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRiwayatPenjualan.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FrmUtamaKasir.Designer.vb">
       <DependentUpon>FrmUtamaKasir.vb</DependentUpon>
     </Compile>
@@ -148,6 +160,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLaporanOwner.resx">
       <DependentUpon>FrmLaporanOwner.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPembayaran.resx">
+      <DependentUpon>FrmPembayaran.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRiwayatPenjualan.resx">
+      <DependentUpon>FrmRiwayatPenjualan.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmUtamaOwner.resx">
       <DependentUpon>FrmUtamaOwner.vb</DependentUpon>
